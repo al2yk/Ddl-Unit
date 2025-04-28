@@ -24,12 +24,29 @@ namespace ddl
             List<string> members,
             string organizer)
         {
-            throw new NotImplementedException();
+            var newEvent = new Event
+            {
+                Id = nextId++,
+                Title = title,
+                Date = date,
+                Description = description,
+                Type = type,
+                Members = members,
+                Organizer = organizer
+            };
+            events.Add(newEvent);
+            return newEvent.Id;
         }
 
         public bool DeleteEvent(int id)
         {
-            throw new NotImplementedException();
+            var eventToDel = events.FirstOrDefault(e => e.Id == id);
+            if (eventToDel != null)
+            {
+                events.Remove(eventToDel);
+                return true;
+            }
+            return false;
         }
 
         public bool UpdateEvent(int id, string title,
@@ -37,45 +54,58 @@ namespace ddl
             string type, List<string> members,
             string organizer)
         {
-            throw new NotImplementedException();
+            var eventToUpd = events.FirstOrDefault(e => e.Id == id);
+            if (eventToUpd != null)
+            {
+                eventToUpd.Title = title;
+                eventToUpd.Date = date;
+                eventToUpd.Description = description;
+                eventToUpd.Type = type;
+                eventToUpd.Members = members;
+                eventToUpd.Organizer = organizer;
+                return true;
+            }
+            return false;
         }
 
         public Event GetEventById(int id)
         {
-            throw new NotImplementedException();
+            return events.FirstOrDefault(e => e.Id == id);
 
         }
 
         public List<Event> GetAllEvents()
         {
-            throw new NotImplementedException();
+            return events;
 
         }
 
         public List<Event> GetEventsByDate(DateTime date)
         {
-            throw new NotImplementedException();
+            return events.Where(e => e.Date.Date == date.Date).ToList();
 
         }
 
         public List<Event> GetEventsByType(string type)
         {
-           throw new NotImplementedException();
+            return events.Where(e => e.Type.Equals(type, StringComparison.OrdinalIgnoreCase)).ToList();
         }
 
         public int GetEventCount()
         {
-            throw new NotImplementedException();
+            return events.Count;
+
         }
 
         public List<Event> GetEventsByMembers(string members)
         {
-            throw new NotImplementedException();
+            return events.Where(e => e.Members.Contains(members)).ToList();
+
         }
 
         public List<Event> GetEventsByOrganizer(string organizer)
         {
-            throw new NotImplementedException();
+            return events.Where(e => e.Organizer.Equals(organizer, StringComparison.OrdinalIgnoreCase)).ToList();
         }
     }
 }
