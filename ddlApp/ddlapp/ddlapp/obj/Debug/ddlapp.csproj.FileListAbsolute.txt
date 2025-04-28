@@ -1,0 +1,10 @@
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\bin\Debug\ddlapp.exe.config
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\bin\Debug\ddlapp.exe
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\bin\Debug\ddlapp.pdb
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\bin\Debug\ddl.dll
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\bin\Debug\ddl.pdb
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\obj\Debug\ddlapp.csproj.AssemblyReference.cache
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\obj\Debug\ddlapp.csproj.CoreCompileInputs.cache
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\obj\Debug\ddlapp.csproj.Up2Date
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\obj\Debug\ddlapp.exe
+D:\Coding\c#\ddl\ddlApp\ddlapp\ddlapp\obj\Debug\ddlapp.pdb

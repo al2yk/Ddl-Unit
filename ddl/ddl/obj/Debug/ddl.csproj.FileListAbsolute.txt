@@ -1,0 +1,6 @@
+D:\Coding\c#\ddl\ddl\ddl\bin\Debug\ddl.dll
+D:\Coding\c#\ddl\ddl\ddl\bin\Debug\ddl.pdb
+D:\Coding\c#\ddl\ddl\ddl\obj\Debug\ddl.csproj.AssemblyReference.cache
+D:\Coding\c#\ddl\ddl\ddl\obj\Debug\ddl.csproj.CoreCompileInputs.cache
+D:\Coding\c#\ddl\ddl\ddl\obj\Debug\ddl.dll
+D:\Coding\c#\ddl\ddl\ddl\obj\Debug\ddl.pdb
