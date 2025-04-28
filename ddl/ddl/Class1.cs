@@ -40,13 +40,8 @@ namespace ddl
 
         public bool DeleteEvent(int id)
         {
-            var eventToDel = events.FirstOrDefault(e => e.Id == id);
-            if (eventToDel != null)
-            {
-                events.Remove(eventToDel);
-                return true;
-            }
-            return false;
+            var eventToRemove = events.FirstOrDefault(e => e.Id == id);
+            return eventToRemove != null && events.Remove(eventToRemove);
         }
 
         public bool UpdateEvent(int id, string title,
@@ -54,15 +49,15 @@ namespace ddl
             string type, List<string> members,
             string organizer)
         {
-            var eventToUpd = events.FirstOrDefault(e => e.Id == id);
-            if (eventToUpd != null)
+            var update = events.FirstOrDefault(e => e.Id == id);
+            if (update != null)
             {
-                eventToUpd.Title = title;
-                eventToUpd.Date = date;
-                eventToUpd.Description = description;
-                eventToUpd.Type = type;
-                eventToUpd.Members = members;
-                eventToUpd.Organizer = organizer;
+                update.Title = title;
+                update.Date = date;
+                update.Description = description;
+                update.Type = type;
+                update.Members = members;
+                update.Organizer = organizer;
                 return true;
             }
             return false;
